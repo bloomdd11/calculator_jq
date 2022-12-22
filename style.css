@@ -1,0 +1,117 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  color: white;
+  max-width: 23rem;
+  height: 75vh;
+  background-color: #000;
+  padding: 2rem 1rem;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: fl;
+}
+
+.noti {
+  margin: 1rem 0;
+  font-size: 5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.hide {
+  display: none;
+}
+
+.success {
+  border: 3px dotted green;
+  color: green;
+}
+
+.fail {
+  border: 3px dotted red;
+  color: red;
+}
+
+.input {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.input input {
+  width: 100%;
+  font-size: 40px;
+  text-align: end;
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  padding: 1rem 0.5rem;
+  letter-spacing: 5px;
+}
+
+.answer {
+  border: 3px solid black;
+  font-size: 4rem;
+  text-align: end;
+  color: #888;
+  margin: 1rem 0;
+}
+
+.numbers>.num {
+  background-color: #313131;
+  border: 2px solid #313131;
+}
+
+.numbers>.ope,
+.numbers>.fun {
+  background-color: #f69906;
+  border: 2px solid #f69906;
+}
+
+.numbers>.num-child {
+  border-radius: 50%;
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.numbers>.num-child:hover {
+  cursor: pointer;
+  border: none;
+  background-color: #aaa;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 80px);
+  /* width */
+  grid-auto-rows: 80px;
+  grid-template-areas: 1 1 1 2;
+  grid-gap: 1rem;
+}
+
+.num-child:nth-child(17) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  border-radius: 50px;
+}
+
+.num-child:nth-child(1),
+.num-child:nth-child(2),
+.num-child:nth-child(3) {
+  background-color: #9f9f9f;
+  border: 1px solid #9f9f9f;
+}
